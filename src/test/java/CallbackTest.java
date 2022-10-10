@@ -16,7 +16,7 @@ public class CallbackTest {
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver-1");
     }
 
     @BeforeEach
