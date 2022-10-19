@@ -42,7 +42,7 @@ public class CallbackTest {
         driver.findElement(By.cssSelector("[type=\"tel\"]")).sendKeys("+12345678910");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button__content")).click();
-        String text = driver.findElement(By.className("Success_successBlock__2L3Cw")).getText();
+        String text = driver.findElement(By.cssSelector("[data-test-id='order-success']")).getText();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
     }
 
